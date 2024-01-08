@@ -1,0 +1,17 @@
+<%- include('../partials/header') %>
+
+
+<ul>
+    <% skills.forEach(function(skills) { %>
+    <li>
+        <a href="/skills/<%=skills.id %>"><%= skills.skill %></a>
+        - 
+        <%= skills.canDo ? 'yes' : 'no' %> 
+     
+    </li> <br>
+    <% }) %>
+</ul>
+<a href="/skills/new">Add Skill</a>
+  
+    
+<%- include('../partials/footer') %>
